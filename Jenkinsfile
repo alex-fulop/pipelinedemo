@@ -14,7 +14,7 @@ pipeline {
              steps{
                 echo 'testing..'
                 withGradle() {
-                sh './grad;ew test'
+                sh './gradlew test'
                 }
              }
         }
@@ -22,7 +22,7 @@ pipeline {
         stage ('Deploy Stage') {
              steps{
                 echo 'deploying...'
-                sh './grad;ew clean'
+                sh './gradlew clean'
              }
         }
     }
